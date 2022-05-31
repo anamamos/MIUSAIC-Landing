@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIUSAIC - Editor</title>
+    <link rel="shortcut icon" href="./../resources/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./../styles/root.css">
+    <link rel="stylesheet" href="./../styles/Footer.css">
+    <link rel="stylesheet" href="./../styles/DashboardPage/DashboardPage.css">
+    <link rel="stylesheet" href="./../styles/DashboardPage/VideoCreation.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="nav__controls">
+            <img src="./../resources/Dashboard/platformLogo.png" alt="" srcset="">
+
+            <a href="./Dashboard.html" class="nav__btn "><img src="./../resources/Dashboard/home.png" alt=""></a>
+            <a href="" class="nav__btn selected"><img src="./../resources/Dashboard/video.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/audio.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/mixing.png" alt=""></a>
+            <a href="" class="nav__btn"><img src="./../resources/Dashboard/user.png" alt=""></a>
+
+        </div>
+
+        <div class="nav__footer">
+            <a href="./Login.html" class="nav__btn"><img src="./../resources/Dashboard/sign out.png" alt=""></a>
+
+            <img src="./../resources/Dashboard/nea logo.png" alt="" srcset="">
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="mainPanel">
+            <header>
+                <h1 class="invisible">¡Hola profe!</h1>
+                <div>
+                    <img src="./../resources/Dashboard/profileIcon.png" alt="" srcset="">
+                    <p><strong>Sara Maldonado</strong></p>
+                </div>
+            </header>
+            <main>
+
+
+                <form id="VideoUpladerForm" action="" onsubmit="SuccesfulLoading();return false;">
+
+                    <section class="video__uploader">
+                        <img src="./../resources/Dashboard/cloud icon.png" alt="">
+
+                        <p><strong>Selecciona archivos de video para subirlos</strong></p>
+                        <p>Tus videos serán privados hasta que los publiques.</p>
+                        <label for="file-upload" class="video-upload cta__button">
+                            Selecciona archivos
+                            <input onchange="VideoChosen(event)" type="file" id="file-upload" name="video"
+                                accept=".mp4, .wav, .flv" required>
+
+                        </label>
+
+                        <p class="file-upload-result">No se ha seleccionado un archivo</p>
+                    </section>
+                    <section class="video__renamer">
+                        <div>
+                            <label for="">
+                                <p><strong>Nombre del video</strong> </p>
+                            </label>
+                            <input onchange="VideoNameEdition(event)" name="" type="text" required>
+                        </div>
+                        <div>
+                            <label for="">
+                                <p><strong>Categoría</strong> </p>
+                            </label>
+                            <input onchange="VideoCategoryEdition(event)" type="text" required>
+                        </div>
+                    </section>
+                    <button class="cta__button -accent" type="submit">¡Continua con la creación de la música!</button>
+
+                </form>
+
+                <section id="VideoParametrization" class="unlisted">
+                    <h2>Nombre del video</h2>
+                    <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <div class="speedSelection">
+
+                        <div class="parameterController">
+
+                            <input onchange="SectionSelected(event)" checked="true" type="radio" name="section"
+                                id="section1">
+                            <label for="section1"></label>
+
+                            <input onchange="SectionSelected(event)" type="radio" name="section" id="section2">
+                            <label for="section2"></label>
+
+                            <input onchange="SectionSelected(event)" type="radio" name="section" id="section3">
+                            <label for="section3"></label>
+
+                            <input onchange="SectionSelected(event)" type="radio" name="section" id="section4">
+                            <label for="section4"></label>
+
+                            <input onchange="SectionSelected(event)" type="radio" name="section" id="section5">
+                            <label for="section5"></label>
+
+
+                        </div>
+
+                        <section>
+                            <h4>¿Cómo prefieres que sea la música?</h4>
+
+                            <div>
+                                <p><strong>Calmada</strong> </p>
+                                <input onchange="HandleAnswer1(event.target.value)" type="range" name="" id="">
+                                <p><strong>Estridente</strong></p>
+                            </div>
+
+                            <button onclick="NextSection()" class="cta__button -accent">Continuar</button>
+                        </section>
+
+                        <section class="unlisted">
+                            <h4>¿Cómo prefieres que sea la música?</h4>
+
+                            <div>
+                                <p><strong>Lenta</strong> </p>
+                                <input onchange="HandleAnswer2(event.target.value)" type="range" name="" id="">
+                                <p><strong>Rapida</strong></p>
+                            </div>
+
+                            <button onclick="NextSection()" class="cta__button -accent">Continuar</button>
+                        </section>
+
+                        <section class="unlisted">
+                            <h4>¿Cómo prefieres que sea la música?</h4>
+
+                            <div>
+                                <p><strong>Triste</strong> </p>
+                                <input onchange="HandleAnswer3(event.target.value)" type="range" name="" id="">
+                                <p><strong>Alegre</strong></p>
+                            </div>
+
+                            <button onclick="NextSection()" class="cta__button -accent">Continuar</button>
+                        </section>
+
+                        <section class="unlisted">
+                            <h4>¿Cómo prefieres que sea la música?</h4>
+
+                            <div>
+                                <p><strong>Acústica</strong> </p>
+                                <input onchange="HandleAnswer4(event.target.value)" type="range" name="" id="">
+                                <p><strong>Electronica</strong></p>
+                            </div>
+
+                            <button onclick="NextSection()" class="cta__button -accent">Continuar</button>
+                        </section>
+
+                        <section class="unlisted">
+                            <h4>¿Cómo prefieres que sea la música?</h4>
+
+                            <div>
+                                <p><strong>Con poco ritmo</strong> </p>
+                                <input onchange="HandleAnswer5(event.target.value)" type="range" name="" id="">
+                                <p><strong>Con mucho ritmo</strong></p>
+                            </div>
+
+                            <button onclick="FinishParametrization()" class="cta__button -accent">Generar
+                                música</button>
+                        </section>
+                    </div>
+                    <div class="confirmation unlisted">
+                        <h4>¿Te gusto esta música?</h4>
+                        <button onclick="MusicConfirmed()" class="cta__button -accent">Si, continuar</button>
+                        <p><strong>No</strong></p>
+                        <button onclick="ResetTest()" class="cta__button -accent">Realizar la encuesta
+                            nuevamente</button>
+                    </div>
+
+                    <div class="volumeModifier unlisted">
+                        <div>
+                            <p><strong>Audio original</strong></p>
+                            <input type="range" name="" id="">
+                        </div>
+                        <div>
+                            <p><strong>Música de fondo</strong></p>
+                            <input type="range" name="" id="">
+                        </div>
+
+                        <button onclick="CreateMusic()" class="cta__button -accent">¡Crear música!</button>
+                    </div>
+
+
+                    <div class="saveScreen unlisted">
+                        <button onclick="SaveMusic()" class="cta__button -accent">Guardar</button>
+                        <a href="./Dashboard.html" class="cta__button -accent">Volver al portal</a>
+                    </div>
+                </section>
+
+            </main>
+        </section>
+        <footer>
+            <div class="landing__page__footer__copyright">
+
+                <span>
+                    <p><strong>En asociación con:</strong></p> <img src="./../resources/logo_nea.png" alt="" srcset="">
+                </span>
+
+                <p>Todos los derechos reservados</p>
+
+            </div>
+            <div class="landing__page__footer__navigation">
+                <a href="">Términos y Condiciones</a>
+                <a href="">Política de Privacidad</a>
+                <a href="">Licencias de Uso</a>
+
+            </div>
+
+            </div>
+        </footer>
+    </main>
+    <script src="./../src/VideoCreation.js"></script>
+</body>
+
+</html>

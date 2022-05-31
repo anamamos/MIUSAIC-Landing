@@ -1,0 +1,90 @@
+main {
+    background: radial-gradient(5211.89% 17791.02% at 100% 65.44%, rgba(166, 107, 255, 0.3) 0%, rgba(191, 157, 242, 0.3) 47.92%, rgba(255, 255, 255, 0.3) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        , radial-gradient(3587.8% 34006.25% at -22.4% 44.02%, rgba(238, 197, 178, 0.55) 0%, rgba(255, 255, 255, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    padding: 0 40px;
+
+
+}
+
+main>section {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+main>section>img {
+    width: 100%;
+
+    flex-grow: 0;
+    max-width: 700px;
+    margin-top: -100px;
+
+}
+
+.contact__form {
+
+    color: var(--greyish_black);
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 20px;
+
+
+
+    width: 40%;
+
+    min-width: 270px;
+    max-width: 700px;
+
+    background-color: var;
+
+}
+
+.contact__form>.cta__button {
+    width: 100%;
+}
+
+.contact__form>h1,
+.contact__form>h3,
+.contact__form>h4 {
+    font-weight: 600;
+}
+
+.contact__form>h4>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1300px) {
+
+
+    main>section>img {
+        display: none;
+    }
+
+    .contact__form {
+
+
+
+
+        width: 80%;
+
+
+
+    }
+
+
+}

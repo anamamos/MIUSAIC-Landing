@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIUSAIC - Registro</title>
+    <link rel="shortcut icon" href="./../resources/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../styles/root.css">
+    <link rel="stylesheet" href="./../styles/Navbar.css">
+    <link rel="stylesheet" href="./../styles/Footer.css">
+    <link rel="stylesheet" href="./../styles/LoginPage/LoginPage.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img class="logo" src="./../resources/logo.png" alt="" srcset="">
+            <ul class="navbar__controls">
+                <a href="./../index.html">Inicio</a>
+                <a href="./AboutUs.html">Nosotros</a>
+                <a href="./ContactUs.html">Contáctenos</a>
+                <hr />
+                <a href="./Login.html">Acceder</a>
+                <a class="cta__button selected">¡Crea una cuenta!</a>
+            </ul>
+        </nav>
+        <section>
+            <img src="./../resources/Login/SignImage.png" alt="" srcset="">
+            <form class="contact__form" action=""
+                onsubmit=' window.location = "./../pages/Dashboard.html" ;return false'>
+                <h1>Crea tu cuenta</h1>
+                <h4>¿Ya tienes una cuenta? <a href="./Login.html">Inicia sesión</a></h4>
+
+                <div class="input">
+                    <label for="Name">Nombre</label>
+                    <input name="Name" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="LastName">Apellido</label>
+                    <input name="LastName" type="text" required>
+                </div>
+
+                <div class="input">
+                    <label for="Email">Correo</label>
+                    <input name="Email" type="email" required>
+                </div>
+
+                <div class="input">
+                    <label for="Phone">Contraseña</label>
+                    <input minlength="8" name="Phone" type="password" required>
+                </div>
+                <div class="input">
+                    <label for="Phone">Contraseña</label>
+                    <input minlength="8" name="Phone" type="password" required>
+                </div>
+
+
+                <button class="cta__button " type="submit">Continuar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="landing__page__footer__copyright">
+
+            <span>
+                <p><strong>En asociación con:</strong></p> <img src="./../resources/logo_nea.png" alt="" srcset="">
+            </span>
+
+            <p>Todos los derechos reservados</p>
+
+        </div>
+        <div class="landing__page__footer__newsletter">
+            <p><strong>¿No quieres perderte ninguna novedad?<br>
+                    Suscribete a nuestro New Letter</strong></p>
+            <div class="newsletter__subscription">
+                <input type="email" name="" id="" placeholder="Ej: tucorreo@correo.com">
+                <button class="cta__button">Enviar</button>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

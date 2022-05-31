@@ -1,0 +1,69 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 16 version
+*/
+
+body {
+    position: relative;
+    background: -o-linear-gradient(64.5deg, #003687 -32.43%, #B897FF 42.66%, rgba(255, 177, 73, 0.47) 127.59%, #FFFFFF 170.8%), #FFFFFF;
+    background: linear-gradient(25.5deg, #003687 -32.43%, #B897FF 42.66%, rgba(255, 177, 73, 0.47) 127.59%, #FFFFFF 170.8%), #FFFFFF;
+    background-repeat: no-repeat;
+
+
+}
+
+main {
+
+    padding: 0 112px;
+    min-height: 100vh;
+
+}
+
+main>section {
+
+    color: var(--background__white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 120px 0 50px 0;
+    width: 100%;
+
+
+}
+
+main>section>img {
+
+    max-width: 450px;
+    min-width: 250px;
+    width: 35%;
+
+}
+
+main>section>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 20px;
+
+    max-width: 500px;
+    min-width: 270px;
+
+}

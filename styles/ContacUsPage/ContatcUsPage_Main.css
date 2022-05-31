@@ -1,0 +1,197 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 16 version
+*/
+
+h1 {
+    font-weight: var(--SemiBold);
+}
+
+h4 {
+
+    font-weight: var(--SemiBold);
+    color: var(--greyish_black);
+}
+
+body {
+    position: relative;
+    background: -o-linear-gradient(64.5deg, #003687 -32.43%, #B897FF 42.66%, rgba(255, 177, 73, 0.47) 127.59%, #FFFFFF 170.8%), #FFFFFF;
+    background: linear-gradient(25.5deg, #003687 -32.43%, #B897FF 42.66%, rgba(255, 177, 73, 0.47) 127.59%, #FFFFFF 170.8%), #FFFFFF;
+
+}
+
+nav {
+    padding-left: 112px;
+    padding-right: 112px;
+}
+
+main {
+
+    /* padding: 0 112px; */
+    min-height: 100vh;
+}
+
+main>img {
+
+    width: 100%;
+    max-height: 200px;
+
+    display: block;
+
+
+}
+
+main>section {
+
+    width: 100%;
+    background-color: var(--background__white);
+    height: 750px;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+
+
+}
+
+main>section>img {
+
+    position: absolute;
+    margin-top: -245px;
+    right: 50px;
+
+    width: 650px;
+}
+
+.contact__form {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 40px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 15%;
+    width: 40%;
+
+    min-width: 270px;
+    max-width: 700px;
+
+    background-color: var;
+}
+
+.name__inputs {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-column-gap: 30px;
+
+    -moz-column-gap: 30px;
+
+    column-gap: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 100%;
+}
+
+
+.name__inputs>.input {
+
+    -webkit-box-flex: 1;
+
+    -ms-flex-positive: 1;
+
+    flex-grow: 1;
+}
+
+.contact__form>.cta__button {
+
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+
+    main>img {
+
+        max-height: 150px;
+    }
+
+    main>section {
+
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    main>section>img {
+
+        display: none;
+    }
+
+    .contact__form {
+
+
+        margin: 0;
+        margin-top: 40px;
+
+        width: 80%;
+
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+
+
+    main>img {
+
+        max-height: 75px;
+    }
+
+
+    .contact__form {
+
+
+        margin: 0;
+        margin-top: 40px;
+
+        width: 80%;
+
+    }
+
+}

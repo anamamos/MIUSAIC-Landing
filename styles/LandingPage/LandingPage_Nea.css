@@ -1,0 +1,61 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 16 version
+*/
+
+.landing__page__nea {
+    padding: 70px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 200px;
+    background-color: var(--background__white);
+    color: var(--greyish_black);
+}
+
+.landing__page__nea>img {
+    z-index: 200;
+    margin-top: -100px;
+    min-width: 400px;
+    max-width: 650px;
+    flex-shrink: 0;
+    width: 30%;
+
+}
+
+.landing__page__nea__explanation {
+    height: 300px;
+
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.landing__page__nea__explanation>img {
+
+
+    width: 250px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .landing__page__nea>img {
+        display: none;
+
+    }
+
+
+    .landing__page__nea__explanation>img {
+
+
+        width: 200px;
+    }
+
+
+}
